@@ -13,6 +13,6 @@ steps:
    password: ${{ secrets.HUB_TOKEN }}
 - name: Build the hello-docker Docker image
 run: |
-       docker build . --tag ghcr.io/rumeshmega/hello-docker-gcr-demo:latest
+       docker build . --tag ghcr.io/rumeshmega/hello-docker-gcr-demo:latest 
        docker run ghcr.io/rumeshmega/hello-docker-gcr-demo:latest
        docker push ghcr.io/rumeshmega/hello-docker-gcr-demo:latest
