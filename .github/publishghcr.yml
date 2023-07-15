@@ -10,7 +10,7 @@ steps:
   with:
    registry: ghcr.io
    username: ${{ github.actor }}
-   password: ${{ secrets.HUB_TOKEN }}
+   password: ${{ secrets.HUB_TOKEN }} 
 - name: Build the hello-docker Docker image
 run: |
        docker build . --tag ghcr.io/rumeshmega/hello-docker-gcr-demo:latest 
